@@ -18,9 +18,9 @@
   
   .loader {
   
-    border: 5px solid #f3f3f3; /* Light grey */
+    border: 5px solid #388980; /* Light grey */
   
-    border-top: 5px solid #3d3e3f; /* gray */
+    border-top: 5px solid #b41449; /* gray */
   
     position: absolute;
   
@@ -47,3 +47,9 @@
     100% { transform: rotate(360deg); }
   
   }
+
+
+  th, h2, a, p, button, td, pagination-controls{
+    font-family: 'Caprasimo', cursive;
+  }
+

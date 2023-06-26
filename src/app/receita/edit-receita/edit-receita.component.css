@@ -1,0 +1,6 @@
+th, h2, a, p, button, label, div, pagination-controls{
+    font-family: 'Caprasimo', cursive;
+}
+.error{
+    color: rgb(204, 16, 47) ;
+}
