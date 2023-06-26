@@ -54,9 +54,9 @@ export class AddReceitaComponent implements OnInit{
 
         nome: new FormControl('', Validators.required),
 
-        idade: new FormControl('', Validators.required),
+        ingredientes: new FormControl('', Validators.required),
 
-        telefone: new FormControl('', [Validators.required,  Validators.pattern('^[0-9]+$')])
+        modopreparo: new FormControl('', Validators.required)
 
       });
 
@@ -94,17 +94,17 @@ export class AddReceitaComponent implements OnInit{
 
  
 
-    get idade(){
+    get ingredientes(){
 
-      return this.receitaForm.get('idade');
+      return this.receitaForm.get('ingredientes');
 
     }
 
  
 
-    get telefone(){
+    get modopreparo(){
 
-      return this.receitaForm.get('telefone');
+      return this.receitaForm.get('modopreparo');
 
     }
 

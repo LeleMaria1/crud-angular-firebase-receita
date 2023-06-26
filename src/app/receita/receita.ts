@@ -3,7 +3,7 @@ export interface Receita {
 
   nome: String;
 
-  idade: Number;
+  ingredientes: String;
 
-  telefone: String;
+  modopreparo: String;
 }

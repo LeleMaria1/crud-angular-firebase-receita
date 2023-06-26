@@ -36,13 +36,13 @@
   
           <div class="col-md-12 mb-3">
   
-            <label>Idade</label>
+            <label>ingredientes</label>
   
             <input
   
-              type="number"
+              type="text"
   
-              formControlName="idade"
+              formControlName="ingredientes"
   
               class="form-control"
   
@@ -52,9 +52,9 @@
   
             <!-- errors-->
   
-            <p *ngIf="idade?.touched && idade?.invalid" class="error">
+            <p *ngIf="ingredientes?.touched && ingredientes?.invalid" class="error">
   
-              <sup>*</sup>Informe a idade
+              <sup>*</sup>Informe os ingredientes
   
             </p>
   
@@ -66,13 +66,13 @@
   
           <div class="col-md-12 mb-3">
   
-            <label>Telefone:</label>
+            <label>Modo de preparo:</label>
   
             <input
   
               type="text"
   
-              formControlName="telefone"
+              formControlName="modopreparo"
   
               class="form-control"
   
@@ -82,15 +82,15 @@
   
             <!-- errors-->
   
-            <p *ngIf="telefone?.touched && telefone?.invalid" class="error">
+            <p *ngIf="modopreparo?.touched && modopreparo?.invalid" class="error">
   
-              <sup>*</sup>Informe telefone
+              <sup>*</sup>Informe o modo de preparo
   
             </p>
   
-            <p *ngIf="telefone?.errors?.['pattern']" class="error">
+            <p *ngIf="modopreparo?.errors?.['pattern']" class="error">
   
-              <sup>*</sup>Use apenas números
+              <sup>*</sup>
   
             </p>
   

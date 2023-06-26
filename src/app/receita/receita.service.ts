@@ -40,9 +40,9 @@ export class ReceitaService {
 
       nome: receita.nome,
 
-      telefone: receita.telefone,
+      modopreparo: receita.modopreparo,
 
-      idade: receita.idade,
+      ingredientes: receita.ingredientes,
 
     });
 
@@ -80,9 +80,9 @@ export class ReceitaService {
 
       nome: receita.nome,
 
-      telefone: receita.telefone,
+      modopreparo: receita.modopreparo,
 
-      idade: receita.idade,
+      ingredientes: receita.ingredientes,
 
     });
 

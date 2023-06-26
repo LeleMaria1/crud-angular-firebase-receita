@@ -46,7 +46,7 @@
   
         <!-- LINHA 1 - CAMPO NOME -->
   
-        <!-- LINHA 2 - CAMPO IDADE -->
+        <!-- LINHA 2 - CAMPO ingredientes -->
   
         <div class="row">
   
@@ -54,53 +54,17 @@
   
             <label
   
-              [ngClass]="{'text-danger': idade?.touched && idade?.invalid}"
+              [ngClass]="{'text-danger': ingredientes?.touched && ingredientes?.invalid}"
   
-              for="idade" class="form-label">Idade</label>
-  
-            <input
-  
-              [ngClass]="{'is-invalid': idade?.touched && idade?.invalid, 'is-valid': idade?.touched && idade?.valid}"
-  
-              type="number"
-  
-              formControlName="idade"
-  
-              class="form-control"
-  
-              required
-  
-            />
-  
-            <!-- Validation FeedBack -->
-  
-            <div class="invalid-feedback"><sup>*</sup>Idade obrigatório</div>
-  
-          </div>
-  
-        </div>
-  
-        <!-- LINHA 2 - CAMPO IDADE -->
-  
-        <!-- LINHA 3 - CAMPO TELEFONE -->
-  
-        <div class="row">
-  
-          <div class="col-md-12 mb-3">
-  
-            <label
-  
-              [ngClass]="{'text-danger': telefone?.touched && telefone?.invalid}"
-  
-              for="telefone" class="form-label">Telefone:</label>
+              for="ingredientes" class="form-label">Ingredientes</label>
   
             <input
   
-              [ngClass]="{'is-invalid': telefone?.touched && telefone?.invalid, 'is-valid': telefone?.touched && telefone?.valid}"
+              [ngClass]="{'is-invalid': ingredientes?.touched && ingredientes?.invalid, 'is-valid': ingredientes?.touched && ingredientes?.valid}"
   
               type="text"
   
-              formControlName="telefone"
+              formControlName="ingredientes"
   
               class="form-control"
   
@@ -110,13 +74,49 @@
   
             <!-- Validation FeedBack -->
   
-            <div class="invalid-feedback"><sup>*</sup>Informe apenas números</div>
+            <div class="invalid-feedback"><sup>*</sup>Ingredientes obrigatório</div>
   
           </div>
   
         </div>
   
-        <!-- LINHA 3 - CAMPO TELEFONE -->
+        <!-- LINHA 2 - CAMPO ingredientes -->
+  
+        <!-- LINHA 3 - CAMPO modopreparo -->
+  
+        <div class="row">
+  
+          <div class="col-md-12 mb-3">
+  
+            <label
+  
+              [ngClass]="{'text-danger': modopreparo?.touched && modopreparo?.invalid}"
+  
+              for="modopreparo" class="form-label">Modo de preparo:</label>
+  
+            <input
+  
+              [ngClass]="{'is-invalid': modopreparo?.touched && modopreparo?.invalid, 'is-valid': modopreparo?.touched && modopreparo?.valid}"
+  
+              type="text"
+  
+              formControlName="modopreparo"
+  
+              class="form-control"
+  
+              required
+  
+            />
+  
+            <!-- Validation FeedBack -->
+  
+            <div class="invalid-feedback"><sup>*</sup>Informe o modo de preparo</div>
+  
+          </div>
+  
+        </div>
+  
+        <!-- LINHA 3 - CAMPO modopreparo -->
   
         <!-- BOTÕES DO FORMULÁRIO -->
   
