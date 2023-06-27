@@ -38,17 +38,10 @@
   
             <label>ingredientes</label>
   
-            <input
-  
-              type="text"
-  
-              formControlName="ingredientes"
-  
-              class="form-control"
-  
-              required
-  
-            />
+            <textarea name="" id="input" 
+            class="form-control" formControlName="ingredientes"
+            rows="3" required="required" 
+            [ngClass]="{'is-invalid': ingredientes?.touched && ingredientes?.invalid, 'is-valid': ingredientes?.touched && ingredientes?.valid}"></textarea>
   
             <!-- errors-->
   
@@ -68,18 +61,10 @@
   
             <label>Modo de preparo:</label>
   
-            <input
-  
-              type="text"
-  
-              formControlName="modopreparo"
-  
-              class="form-control"
-  
-              required
-  
-            />
-  
+            <textarea name="" id="input" 
+            class="form-control" formControlName="modopreparo"
+            rows="3" required="required" 
+            [ngClass]="{'is-invalid': modopreparo?.touched && modopreparo?.invalid, 'is-valid': modopreparo?.touched && modopreparo?.valid}"></textarea>
             <!-- errors-->
   
             <p *ngIf="modopreparo?.touched && modopreparo?.invalid" class="error">

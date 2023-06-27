@@ -58,7 +58,7 @@ export class EditReceitaComponent implements OnInit{
 
       ingredientes: new FormControl('', Validators.required),
 
-      modopreparo: new FormControl('', [Validators.required,  Validators.pattern('^[0-9]+$')])
+      modopreparo: new FormControl('', Validators.required)
 
     });
 

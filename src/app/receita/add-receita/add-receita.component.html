@@ -58,20 +58,8 @@
   
               for="ingredientes" class="form-label">Ingredientes</label>
   
-            <input
-  
-              [ngClass]="{'is-invalid': ingredientes?.touched && ingredientes?.invalid, 'is-valid': ingredientes?.touched && ingredientes?.valid}"
-  
-              type="text"
-  
-              formControlName="ingredientes"
-  
-              class="form-control"
-  
-              required
-  
-            />
-  
+            <textarea name="" id="input" class="form-control"  formControlName="ingredientes" rows="3" required="required" [ngClass]="{'is-invalid': ingredientes?.touched && ingredientes?.invalid, 'is-valid': ingredientes?.touched && ingredientes?.valid}"></textarea>
+              
             <!-- Validation FeedBack -->
   
             <div class="invalid-feedback"><sup>*</sup>Ingredientes obrigatório</div>
@@ -94,19 +82,10 @@
   
               for="modopreparo" class="form-label">Modo de preparo:</label>
   
-            <input
-  
-              [ngClass]="{'is-invalid': modopreparo?.touched && modopreparo?.invalid, 'is-valid': modopreparo?.touched && modopreparo?.valid}"
-  
-              type="text"
-  
-              formControlName="modopreparo"
-  
-              class="form-control"
-  
-              required
-  
-            />
+
+            <textarea name="" id="input" class="form-control" formControlName="modopreparo"rows="3" required="required" [ngClass]="{'is-invalid': modopreparo?.touched && modopreparo?.invalid, 'is-valid': modopreparo?.touched && modopreparo?.valid}"></textarea>
+              
+
   
             <!-- Validation FeedBack -->
   
